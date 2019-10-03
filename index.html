@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|Titillium+Web&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Rock paper scissors</h1>
+    </header>
+
+    <div class="score-board">
+        <div id="user-label" class="badge">user</div>
+        <div id="comp-label" class="badge">comp</div>
+        <div id="user-score">0<span>:</span id="comp-score">0</span>
+    </div>
+    
+    <div class="result">
+        <p>Paper covers rock. You win!</p>
+    </div>
+
+    <div class="choices">
+        <div class="choice" id="r">
+        <img src="rock.png" alt="It's an icon of a rock.">
+        </div>
+        <div class="choice" id="p">
+        <img src="paper.png" alt="It's an icon of a piece of paper.">
+        </div>
+        <div class="choice" id="s">
+        <img src="scissors.png" alt="It's an icon of scissors.">
+        </div>
+    </div>
+    
+    <p id="action-message">Make your move!</p>
+    <script src="app.js"></script>
+</body>
+
+</html>
