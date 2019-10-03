@@ -11,3 +11,5 @@ export const getRandomThrow = () => {
 };
 
 console.log(getRandomThrow());
+
+//Your console log test your function

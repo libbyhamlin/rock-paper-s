@@ -8,7 +8,7 @@ const compLabel = document.getElementById('comp-label');
 const rock = document.getElementById('r');
 const paper = document.getElementById('p');
 const scissors = document.getElementById('s');
-const actionMessage = document.getElementById('action - message');
+const ctaMessage = document.getElementById('cta-message');
 const submitBtn = document.getElementById('submit-button');
 const userScore = document.getElementById('0');
 const compScore = document.getElementById('0');
@@ -26,7 +26,7 @@ const compScore = document.getElementById('0');
 
 submitBtn.addEventListener('click', () => {});
 
-// *Steps*
+// Steps
 // - Import function
 // - Import/fetch DOM elements
 // - add your event handlers aka:
