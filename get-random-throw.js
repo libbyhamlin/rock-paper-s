@@ -1,15 +1,13 @@
-export const getRandomThrow = () => {
-    const getThrow = Math.floor(Math.random() * 3);
-
-    if (getThrow === 0) {
+export const compThrow = (playerThrow) => {
+    if (playerThrow === 0) {
         return 'rock';
-    } else if (getThrow === 1) {
+    } else if (playerThrow === 1) {
         return 'paper';
-    } else if (getThrow === 2) {
+    } else if (playerThrow === 2) {
         return 'scissors';
     }
 };
 
-console.log(getRandomThrow());
+// console.log(getRandomThrow());
 
 //Your console log test your function
