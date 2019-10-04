@@ -24,7 +24,32 @@ const compScore = document.getElementById('0');
 
 // Set Event handlers
 
-submitBtn.addEventListener('click', () => {});
+submitBtn.addEventListener('click', () => {
+    const compThrow = Math.floor(Math.random() * 3);
+    const playerThrow = document.querySelector('input:checked').value;
+
+    const result = checkResults(playerThrow, compThrow);
+    console.log(playerThrow, 'This is the players choice');
+    console.log(compThrow, 'This is the comps choice');
+    //if (gameResult === 'Tie') {
+    //     result.textContent = 'Tie';
+    //     ties = ties + 1;
+    //     numberOfTies.textContent = ties;
+    // } else if (gameResult === 'Win') {
+    //     result.textContent = 'You won wow!'; 
+    //     wins = wins + 1;
+    //     numberOfWins.textContent = wins;
+    // } else if (gameResult === 'Lose') {
+    //     result.textContent = 'You lost. Try again';
+    //     loses = loses + 1;
+    //     numberOfLoses.textContent = loses;
+    // }
+
+
+
+
+    use get ran thrw function and pass in the Randomly generated number and 
+});
 
 // Steps
 // - Import function
