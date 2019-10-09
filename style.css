@@ -15,6 +15,64 @@ header > h1 {
   font-family: "IBM Plex Mono", monospace;
 }
 
+h2 {
+  text-align: center;
+  font-family: "Titillium Web", sans-serif;
+  color: pink;
+  font-size: 20px;
+  font-weight: light;
+}
+
+.choices {
+  display:flex;
+  justify-content: center;
+  margin-top:50px;
+  text-align: center;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0px 50px 0px;
+  cursor:pointer;
+  
+}
+
+#submit-button {
+  border-radius: 24px;
+  padding: 14px 40px;
+  
+}
+  
+.radio-button {
+  margin-top: 50px 0;
+  text-align: center;
+}
+
+.radio-button {
+  border: 20px solid transparent;
+  border-radius: 100%;
+  margin: 0 20px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.radio-button:hover {
+  background-color: pink;
+  cursor: pointer;
+}
+#rock {
+  display: none;
+}
+
+#paper {
+  display: none;
+}
+
+#scissors {
+  display: none;
+}
+
 p {
   font-family: "Titillium Web", sans-serif;
   text-align: center;
@@ -50,7 +108,7 @@ p {
   right: 35px;
 }
 
-.result {
+.results-css {
   font-size: 30px;
 }
 
@@ -58,10 +116,6 @@ p {
   text-align: center;
 }
 
-.choices {
-  margin-top: 50px 0;
-  text-align: center;
-}
 
 .choice {
   border: 20px solid transparent;
