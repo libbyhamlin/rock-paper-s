@@ -16,6 +16,8 @@
     <header>
         <h1>Rock paper scissors</h1>
     </header>
+    <h2>Select either the rock, paper, or scissors icon to play against the computer.<br>Paper beats rock, rock beats scissors, scissors beats paper.<br> Click the submit button to see result.
+    </h2>
 
     <div class="score-board">
         <div id="user-label" class="badge">user</div>
@@ -23,28 +25,35 @@
         <div id="user-score">0<span>:</span id="comp-score">0</span>
     </div>
     
-    <div class="result">
+    <div class="result-css">
         <p>Paper covers rock. You win!</p>
     </div>
 
-    <div class="choices">
-        <div class="choice" id="r">
-            <input type="text">
-        <img src="rock.png" alt="It's an icon of a rock.">
-        </div>
-        <div class="choice" id="p">
-        <img src="paper.png" alt="It's an icon of a piece of paper.">
-        </div>
-        <div class="choice" id="s">
-        <img src="scissors.png" alt="It's an icon of scissors.">
-        </div>
-    </div>
-    
-    <p id="cta-message">Make your move!</p>
+        <label class="radio-button">
+            <input id="rock" name="options" value="rock" type="radio" checked>
+            <img src="./assets/rock.png" alt="It's an icon of a rock.">
+        </label>
 
-    <section class="btn">
+        <label class="radio-button">
+            <input id="paper" name="options" value="paper" type="radio">
+            <img src="./assets/paper.png" alt="It's an icon of a piece of paper.">
+        </label> 
+
+        <label class="radio-button">
+            <input id="scissors" name="options" value="scissors" type="radio">
+            <img src="./assets/scissors.png" alt="It's an icon of scissors.">
+        </label>
+   
+
+    <section class="button">
             <button id="submit-button">Play game!</button>
-        </section>
+    </section>
+
+    <footer class="footer">
+        <div>Wins:<span id="wins"></span></div>
+        <div>Loses:<span id="loses"></span></div>
+        <div>Ties:<span id="ties"></span></div>
+    </footer>
 
     <script type="module" src="app.js"></script>
 </body>
